@@ -2,14 +2,17 @@ import { Image, TouchableWithoutFeedback, View, Text } from "react-native";
 import { Restaurant } from "../constants";
 import * as Icon from "react-native-feather";
 import { themeColors } from "../themes";
-import { useNavigation, NavigationProp, ParamListBase } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
+import { StackScreens } from "../navigation";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 type RestaurantCardProps = {
   item: Restaurant;
 };
 
 export default function RestaurantCard({ item }: RestaurantCardProps) {
-  const navigation = useNavigation<NavigationProp<ParamListBase>>();
+  const navigation = useNavigation<NativeStackNavigationProp<StackScreens>>();
+
   return (
     <TouchableWithoutFeedback
       onPress={() => navigation.navigate("Restaurant", { ...item })}

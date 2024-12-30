@@ -384,3 +384,4 @@ export const featured = {
 
 export type Featured = typeof featured;
 export type Restaurant = typeof featured.restaurants[0];
+export type Dish = typeof featured.restaurants[0]['dishes'][0];
