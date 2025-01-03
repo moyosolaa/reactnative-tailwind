@@ -1,5 +1,5 @@
 import { useNavigation, useRoute } from "@react-navigation/native";
-import React from "react";
+import React, { useEffect } from "react";
 import { View, Text, Image, ScrollView, TouchableOpacity } from "react-native";
 import { Restaurant } from "../constants";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
@@ -9,12 +9,21 @@ import * as Icon from "react-native-feather";
 import { StatusBar } from "expo-status-bar";
 import DishRow from "../components/dishRow";
 import CartIcon from "../components/cartIcon";
+import { useDispatch } from "react-redux";
+import { setRestaurant } from "../slices/restaurantSlice";
 
 export default function RestaurantScreen() {
   const navigation = useNavigation<NativeStackNavigationProp<StackScreens>>();
 
   const route = useRoute();
   let item = route.params as Restaurant;
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (item && item.id) {
+      dispatch(setRestaurant({ ...item }));
+    }
+  }, []);
 
   return (
     <View>

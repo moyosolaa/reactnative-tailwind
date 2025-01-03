@@ -7,6 +7,8 @@ import { useNavigation } from "@react-navigation/native";
 import { StackScreens } from "../navigation";
 import MapView, { Marker } from "react-native-maps";
 import * as Icon from "react-native-feather";
+import { useSelector } from "react-redux";
+import { selectRestaurant } from "../slices/restaurantSlice";
 
 export default function DeliveryScreen() {
   const restaurant = featured.restaurants[0];
