@@ -13,19 +13,20 @@ Below are some screenshots showcasing the app's interface:
 ### Screenshots
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <div style="flex: 1; min-width: 200px;">
-        <img src="./screenshot.png" alt="Screenshot 1" style="width: 100%;">
-        <p style="text-align: center;">Home Screen</p>
-    </div>
-    <div style="flex: 1; min-width: 200px;">
-        <img src="./screenshot2.png" alt="Screenshot 2" style="width: 100%;">
-        <p style="text-align: center;">Restaurant Menu</p>
-    </div><div style="flex: 1; min-width: 200px;">
-        <img src="./screenshot3.png" alt="Screenshot 2" style="width: 100%;">
-        <p style="text-align: center;">Restaurant Menu</p>
-    </div>
-        <div style="flex: 1; min-width: 200px;">
-        <img src="./screenshot1.png" alt="Screenshot 2" style="width: 100%;">
-        <p style="text-align: center;">Restaurant Menu</p>
-    </div>
+    <p align="center">
+        <img src="./screenshot.png" alt="Screenshot 1" width="200">
+        <br>Home Screen
+    </p>
+    <p align="center">
+        <img src="./screenshot2.png" alt="Screenshot 2" width="200">
+        <br>Restaurant Menu
+    </p>
+    <p align="center">
+        <img src="./screenshot3.png" alt="Screenshot 3" width="200">
+        <br>Restaurant Menu
+    </p>
+    <p align="center">
+        <img src="./screenshot1.png" alt="Screenshot 4" width="200">
+        <br>Restaurant Menu
+    </p>
 </div>
