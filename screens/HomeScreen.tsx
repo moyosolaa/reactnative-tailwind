@@ -47,7 +47,7 @@ export default function HomeScreen() {
         <Categories />
         {/* featured restaurants */}
         <View className="m-4">
-          {[featured, featured, featured, featured].map((item, index) => {
+          {[featured].map((item, index) => {
             return (
               <FeaturedRow
                 key={index}
